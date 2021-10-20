@@ -1,0 +1,44 @@
+{
+  "name": "emoji-playlist",
+  "version": "1.0.0",
+  "description": "Music playlist recommendation app which is curated by emojis",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server/app.js",
+    "build": "webpack --watch --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxineSS/hr-rpp31-mvp.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "npm"
+  ],
+  "author": "Maxine Seo",
+  "license": "ISC",
+  "engines": {
+    "npm": "7.24.0",
+    "node": "v14.16.1"
+  },
+  "homepage": "http://localhost:3000",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^6.0.9",
+    "react": "^17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "nodemon": "^2.0.13",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.2.0"
+  }
+}
