@@ -1,11 +1,14 @@
 {
   "name": "emoji-playlist",
+  "homepage": "https://MaxineSS.github.io/Emoji-Playlist",
   "version": "1.0.0",
   "description": "Music playlist recommendation app which is curated by emojis",
   "main": "app.js",
   "scripts": {
     "start": "nodemon server/app.js",
-    "build": "webpack --watch --config webpack.config.js"
+    "build": "webpack --mode development --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -14,15 +17,16 @@
   "keywords": [
     "node",
     "javascript",
-    "npm"
+    "npm",
+    "api",
+    "web"
   ],
-  "author": "Maxine Seo",
+  "author": "Maxine Majnaric",
   "license": "ISC",
   "engines": {
     "npm": "7.24.0",
     "node": "v14.16.1"
   },
-  "homepage": "http://localhost:3000",
   "dependencies": {
     "axios": "^0.22.0",
     "dotenv": "10.0.0",
@@ -37,6 +41,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.1",
+    "gh-pages": "^3.2.3",
     "nodemon": "^2.0.13",
     "webpack": "^5.57.1",
     "webpack-cli": "^4.2.0"
