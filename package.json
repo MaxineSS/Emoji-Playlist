@@ -6,7 +6,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server/app.js",
-    "build": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "dev:build": "webpack --mode development --watch",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
