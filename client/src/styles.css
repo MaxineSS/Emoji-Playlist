@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #333;
+  font-weight: 400;
+}
+.app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left-section {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+.right-section {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+.get-recoms button{
+  width: 130px;
+  height: 50px;
+  font-size: 30px;
+}
+.comments {
+  display: none;
+}
+.emoji img {
+  width: 50px;
+  height: 50px;
+}
+.reco-add-get {
+  display: flex;
+  justify-content: flex-end;
+}
+.reco-add-get {
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+}
+.track {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px;
+  padding: 20px;
+  background-color: #1DB954;
+}
+.track info {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+.track player {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+.track img {
+  width: 70px;
+  height: 70px;
+}

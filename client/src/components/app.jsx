@@ -1,7 +1,8 @@
 import React from 'react'
 import EmojiPicker from './emojiPicker.jsx'
 import Playlist from './playlist.jsx'
-import Comment  from './comment.jsx'
+import Comment from './comment.jsx'
+import Login from './Login.jsx'
 import axios from 'axios'
 
 class App extends React.Component {
@@ -27,7 +28,7 @@ class App extends React.Component {
       url: '/recommendations',
       method: 'post',
       data: feeling,
-      baseURL: 'http://localhost:3000/',
+      baseURL: 'http://localhost:4000/',
       responseType: 'json'
     }
     axios.request(config)
@@ -39,14 +40,14 @@ class App extends React.Component {
       .catch(error => console.log(error))
   }
   handleAddPlaylist(likedPlaylist) {
-    axios.post('http://localhost:3000/playlists', {
+    axios.post('http://localhost:4000/playlists', {
       data: likedPlaylist
     })
       .then(this.clearReco.bind(this))
     .catch(error => console.log(error))
   }
   handleGetPlaylist () {
-    axios.get('http://localhost:3000/playlists', {
+    axios.get('http://localhost:4000/playlists', {
       responseType: 'json'
     })
     .then((list) => {
