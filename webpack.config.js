@@ -6,8 +6,7 @@ module.exports = {
   entry: `${SRC}/index.js`,
   output: {
     filename: 'main.js',
-    path: DIST,
-    publicPath: "/Emoji-Playlist"
+    path: DIST
   },
   module: {
     rules: [
