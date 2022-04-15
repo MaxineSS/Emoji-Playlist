@@ -28,7 +28,7 @@ class App extends React.Component {
       url: '/recommendations',
       method: 'post',
       data: feeling,
-      baseURL: 'http://localhost:4000/',
+      baseURL: 'http://localhost:4000',
       responseType: 'json'
     }
     axios.request(config)
