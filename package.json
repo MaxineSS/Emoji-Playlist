@@ -7,13 +7,14 @@
   "scripts": {
     "start": "nodemon server/app.js",
     "build": "webpack --mode production",
-    "dev:build": "webpack --mode development --watch",
+    "test": "jest",
+    "build:dev": "webpack --mode development --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxineSS/hr-rpp31-mvp.git"
+    "url": "git+https://github.com/MaxineSS/Emoji-Playlist.git"
   },
   "keywords": [
     "node",

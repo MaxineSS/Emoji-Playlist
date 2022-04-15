@@ -3,11 +3,11 @@ const SRC = path.join(__dirname, 'client/src')
 const DIST = path.join(__dirname, 'client/dist')
 
 module.exports = {
-  mode: 'development',
   entry: `${SRC}/index.js`,
   output: {
     filename: 'main.js',
-    path: DIST
+    path: DIST,
+    publicPath: "/Emoji-Playlist"
   },
   module: {
     rules: [
