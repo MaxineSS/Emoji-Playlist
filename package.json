@@ -2,7 +2,7 @@
   "name": "emojique",
   "homepage": "https://MaxineSS.github.io/emojique",
   "version": "1.0.0",
-  "description": "Music playlist recommendation app which is curated by emojis",
+  "description": "Music playlist recommendation app curated by emojis",
   "main": "app.js",
   "scripts": {
     "start": "nodemon server/app.js",
@@ -21,7 +21,9 @@
     "javascript",
     "npm",
     "api",
-    "web"
+    "web",
+    "music",
+    "spotify"
   ],
   "author": "Maxine Majnaric",
   "license": "ISC",
