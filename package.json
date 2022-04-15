@@ -1,6 +1,6 @@
 {
-  "name": "emoji-playlist",
-  "homepage": "https://MaxineSS.github.io/Emoji-Playlist",
+  "name": "emojique",
+  "homepage": "https://MaxineSS.github.io/emojique",
   "version": "1.0.0",
   "description": "Music playlist recommendation app which is curated by emojis",
   "main": "app.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxineSS/Emoji-Playlist.git"
+    "url": "git+https://github.com/MaxineSS/emojique.git"
   },
   "keywords": [
     "node",
