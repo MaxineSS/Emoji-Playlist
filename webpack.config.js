@@ -3,6 +3,7 @@ const SRC = path.join(__dirname, 'client/src')
 const DIST = path.join(__dirname, 'client/dist')
 
 module.exports = {
+  mode: 'production',
   entry: `${SRC}/index.js`,
   output: {
     filename: 'main.js',
@@ -19,6 +20,10 @@ module.exports = {
             presets: ["@babel/preset-env", "@babel/preset-react"]
           },
         },
+      },
+      {
+        test:  /\.css$/i,
+        use: ["style-loader", "css-loader"],
       }
     ]
   }
