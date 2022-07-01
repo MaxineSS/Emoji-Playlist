@@ -1,4 +1,5 @@
 # <b> Emoji Playlist ✨🎵 </b> #
+[![Build and Deploy](https://github.com/MaxineSS/emojique/actions/workflows/main.yml/badge.svg)](https://github.com/MaxineSS/emojique/actions/workflows/main.yml)
 
 This app is for people who want to easily find music in a fun way, based on their feelings, which are curated by emojis.
 
